@@ -19,9 +19,10 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 			>
 				<ul className="flex flex-col space-x-2 md:flex-row min-w-max">
 					<NavLink href="/about">About</NavLink>
-					<NavLink href="/portfolio">Summary</NavLink>
-					<NavLink href="/cv">Provicial</NavLink>
-					<NavLink href="/blog">FAQ</NavLink>
+					<NavLink href="/summary">Summary</NavLink>
+					<NavLink href="/provincial">Provincial</NavLink>
+					<NavLink href="/global">Global</NavLink>
+					<NavLink href="/faq">FAQ</NavLink>
 				</ul>
 			</nav>
 		</>
