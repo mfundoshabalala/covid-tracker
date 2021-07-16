@@ -16,25 +16,21 @@ font-family: 'Roboto', sans-serif; */
 @tailwind utilities;
 
 @layer components {
-	.text-shadow {
-		text-shadow: 0 0 2px rgb(0 0 0 / 30%);
-	}
-
 	.btn {
-		@apply btn-shadow border whitespace-nowrap cursor-pointer text-center rounded-md px-6 py-2 shadow-sm;
+		@apply btn-shadow border border-gray-800 whitespace-nowrap cursor-pointer text-center rounded-md px-5 py-2 shadow-sm;
 	}
 
 	.btn-shadow {
-		@apply shadow-xl active:shadow-sm hover:shadow-md mix-blend-multiply;
+		@apply shadow-xl active:shadow-sm hover:shadow-md;
 	}
 
 	.btn-primary {
-		@apply from-blue-500  via-blue-600  to-blue-700 bg-gradient-to-br
-		hover:from-blue-800 hover:via-blue-700 hover:to-blue-600 text-white;
+		@apply from-green-500  via-green-600  to-green-700 bg-gradient-to-br
+		hover:from-green-800 hover:via-green-700 hover:to-green-600;
 	}
 
 	.primary-gradient {
-		@apply bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600;
+		@apply bg-gradient-to-br from-green-400 via-green-500 to-green-600;
 	}
 
 	.btn-nav-active {
@@ -49,7 +45,7 @@ font-family: 'Roboto', sans-serif; */
 	}
 
 	.test {
-		@apply bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-blue-500;
+		@apply bg-red-500 sm:bg-yellow-500 md:bg-green-500 lg:bg-green-500;
 	}
 }
 
