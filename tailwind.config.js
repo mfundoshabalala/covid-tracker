@@ -10,8 +10,7 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				cyan: colors.cyan,
-				orange: colors.orange,
+				blueGray: colors.blueGray,
 			},
 			fontFamily: {
 				header: ['"Dancing Script"'],
