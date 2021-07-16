@@ -1,8 +1,14 @@
+import Head from 'next/head';
 import { NextPage } from 'next';
 
 const Global: NextPage = () => (
 	<>
-		<h1>Global</h1>
+		<Head>
+			<title>Covid-19 : Global Statistic</title>
+		</Head>
+		<div className="grid h-full place-items-center">
+			<h1 className="font-black text-8xl">Global Page</h1>
+		</div>
 	</>
 );
 

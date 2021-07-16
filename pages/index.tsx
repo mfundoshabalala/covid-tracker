@@ -1,9 +1,13 @@
+import Head from 'next/head';
 import { NextPage } from 'next';
 
 const Home: NextPage = () => (
 	<>
-		<div>
-			<h1>Home Page</h1>
+		<Head>
+			<title>Covid-19 : Home</title>
+		</Head>
+		<div className="grid h-full place-items-center">
+			<h1 className="font-black text-8xl">Home Page</h1>
 		</div>
 	</>
 );
