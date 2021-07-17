@@ -58,7 +58,7 @@ interface SummaryProps {
 	Date: string;
 }
 
-export interface Country {
+interface Country {
 	ID: string;
 	Country: string;
 	CountryCode: string;
@@ -73,9 +73,9 @@ export interface Country {
 	Premium: Premium;
 }
 
-export interface Premium {}
+interface Premium {}
 
-export interface Global {
+interface Global {
 	NewConfirmed: number;
 	TotalConfirmed: number;
 	NewDeaths: number;
