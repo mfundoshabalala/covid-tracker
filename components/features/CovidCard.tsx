@@ -16,9 +16,7 @@ const CovidCard: React.FC<Country> = (props) => {
 
 	return (
 		<div className="p-2 space-y-5 border border-gray-800 shadow-md hover:shadow-xl max-w-prose">
-			{/* Card Header */}
 			<CovidCardHeader countryName={Country} countryCode={CountryCode} countrySlug={Slug} />
-			{/* Card Body */}
 			<div className="grid grid-cols-3 text-base font-thin">
 				<CovidCardDetailItem title="New Confirmed" value={NewConfirmed} />
 				<CovidCardDetailItem title="New Deaths" value={NewDeaths} />

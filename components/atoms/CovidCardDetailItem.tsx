@@ -1,8 +1,3 @@
-interface DetailProps {
-	title: string;
-	value: number;
-}
-
 const CovidCardDetailItem: React.FC<DetailProps> = (props) => {
 	const { title, value } = props;
 	return (

@@ -84,3 +84,8 @@ interface Global {
 	TotalRecovered: number;
 	Date: string;
 }
+
+interface DetailProps {
+	title: string;
+	value: number;
+}
