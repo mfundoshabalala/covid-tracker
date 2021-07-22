@@ -1,0 +1,33 @@
+import CovidCardHeader from 'components/atoms/CovidCardHeader';
+import CovidCardDetailItem from 'components/atoms/CovidCardDetailItem';
+
+const CovidCard: React.FC<Country> = (props) => {
+	const {
+		Country,
+		CountryCode,
+		Slug,
+		NewConfirmed,
+		NewDeaths,
+		NewRecovered,
+		TotalConfirmed,
+		TotalDeaths,
+		TotalRecovered,
+	} = props;
+
+	return (
+		<div className="p-2 space-y-5 border border-gray-800 shadow-md hover:shadow-xl max-w-prose">
+			{/* Card Header */}
+			<CovidCardHeader countryName={Country} countryCode={CountryCode} countrySlug={Slug} />
+			{/* Card Body */}
+			<div className="grid grid-cols-3 text-base font-thin">
+				<CovidCardDetailItem title="New Confirmed" value={NewConfirmed} />
+				<CovidCardDetailItem title="New Deaths" value={NewDeaths} />
+				<CovidCardDetailItem title="New Recovered" value={NewRecovered} />
+				<CovidCardDetailItem title="Total Confirmed" value={TotalConfirmed} />
+				<CovidCardDetailItem title="Total Deaths" value={TotalDeaths} />
+				<CovidCardDetailItem title="Total Recovered" value={TotalRecovered} />
+			</div>
+		</div>
+	);
+};
+export default CovidCard;
