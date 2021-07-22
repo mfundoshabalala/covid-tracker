@@ -8,7 +8,7 @@ interface GlobalDetailsProps {
 }
 
 const GlobalSummaryHeaderItem: React.FC<GlobalDetailsProps> = (props) => {
-	const { title, value1, value2, className = 'from-orange-400 via-orange-500 to-orange-600' } = props;
+	const { title, value1, value2, className = '' } = props;
 	const styles = `grid py-4 shadow sm:flex-1 place-items-center max-w-prose rounded`;
 
 	return (
@@ -17,11 +17,11 @@ const GlobalSummaryHeaderItem: React.FC<GlobalDetailsProps> = (props) => {
 			<div className="max-w-max">
 				<div className="flex w-full space-x-2 text-xl font-semibold">
 					<span className="">New:</span>
-					<span className="">{value1}</span>
+					<span className="">{value1?.toLocaleString()}</span>
 				</div>
 				<div className="flex w-full space-x-2 text-xl font-semibold">
 					<span className="">Total:</span>
-					<span className="">{value2}</span>
+					<span className="">{value2?.toLocaleString()}</span>
 				</div>
 			</div>
 		</section>
