@@ -17,7 +17,7 @@ const CovidCardHeader: React.FC<HeaderProps> = (props) => {
 					height={95}
 					src={`https://flagcdn.com/${countryCode.toLowerCase()}.svg`}
 					alt={countrySlug}
-					className="object-cover align-middle"
+					className="object-cover align-middle rounded-sm"
 				/>
 			</div>
 			<div className="flex flex-col items-center justify-center flex-1 font-thin">

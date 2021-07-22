@@ -14,12 +14,12 @@ const GlobalSummaryHeaderItem: React.FC<GlobalDetailsProps> = (props) => {
 	return (
 		<section className={classNames(styles, className)}>
 			<h2 className="text-2xl font-black uppercase">{`Global ${title} Cases`}</h2>
-			<div className="max-w-max">
-				<div className="flex w-full space-x-2 text-xl font-semibold">
+			<div className="font-mono text-lg font-light max-w-max">
+				<div className="flex justify-between w-full space-x-4">
 					<span className="">New:</span>
 					<span className="">{value1?.toLocaleString()}</span>
 				</div>
-				<div className="flex w-full space-x-2 text-xl font-semibold">
+				<div className="flex justify-between w-full space-x-4">
 					<span className="">Total:</span>
 					<span className="">{value2?.toLocaleString()}</span>
 				</div>

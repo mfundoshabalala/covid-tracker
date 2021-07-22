@@ -5,7 +5,7 @@ import GlobalSummaryHeaderItem from 'components/atoms/GlobalSummaryHeaderItem';
 const SummaryHeader: React.FC = () => {
 	const { data } = useSWR<SummaryProps>('https://api.covid19api.com/summary');
 	return (
-		<header className="container flex flex-col flex-wrap py-6 mx-auto text-center text-blueGray-900 gap-x-2 gap-y-1 sm:flex-row">
+		<header className="container flex flex-col flex-wrap justify-center py-6 mx-auto text-center font-firaSans text-blueGray-900 gap-x-2 gap-y-1 sm:flex-row">
 			<GlobalSummaryHeaderItem
 				title="Confirmed"
 				value1={data?.Global.NewConfirmed}

@@ -17,7 +17,7 @@ const Summary: NextPage = () => {
 			</Head>
 			<div className="grid h-full place-items-center">
 				<SummaryHeader />
-				<ul className="container grid py-6 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-6">
+				<ul className="container grid justify-center py-6 mx-auto md:grid-cols-2 lg:grid-cols-3 gap-x-2 gap-y-6">
 					{data?.Countries?.map((country) => (
 						<CovidCard {...country} key={country.ID} />
 					))}
