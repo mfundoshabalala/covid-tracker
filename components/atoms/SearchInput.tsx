@@ -9,7 +9,7 @@ const SearchInput: React.FC = () => {
 				type="search"
 				name="search"
 				id="search"
-				className="max-w-md pl-12 mx-auto text-gray-300 placeholder-gray-400 rounded bg-blueGray-700 min-w-max"
+				className="w-full pl-12 mx-auto text-gray-300 placeholder-gray-400 rounded sm:w-96 bg-blueGray-700"
 				placeholder="Search for a country"
 				onChange={handleSearchTermChange}
 			/>

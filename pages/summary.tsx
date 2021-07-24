@@ -7,17 +7,17 @@ import SummaryHeader from 'components/features/SummaryHeader';
 import CountriesList from 'components/features/CountriesList';
 
 const Summary: NextPage = () => (
-		<>
-			<Head>
-				<title>Covid-19 : Global Summary Statistics</title>
-			</Head>
-			<SearchProvider>
-				<div className="grid h-full place-items-center">
-					<SummaryHeader />
-					<CountriesList />
-				</div>
-			</SearchProvider>
-		</>
-	);
+	<>
+		<Head>
+			<title>Covid-19 : Global Summary Statistics</title>
+		</Head>
+		<SearchProvider>
+			<div className="grid h-full">
+				<SummaryHeader />
+				<CountriesList />
+			</div>
+		</SearchProvider>
+	</>
+);
 
 export default Summary;
